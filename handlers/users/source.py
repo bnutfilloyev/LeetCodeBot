@@ -7,4 +7,4 @@ from loader import dp
 
 @dp.message_handler(commands=['source'])
 async def source(msg: types.Message):
-    await msg.answer(text.source, reply_markup=url_keyboard)
+    await msg.reply(text.source, reply_markup=url_keyboard)
